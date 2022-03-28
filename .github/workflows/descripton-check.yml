@@ -18,3 +18,9 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           #exempt-labels: no qa
+          continue-on-error: true
+      - name: comtt
+          uses: thollander/actions-comment-pull-request@v1
+          with:
+            message: 'Example of message !'
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
