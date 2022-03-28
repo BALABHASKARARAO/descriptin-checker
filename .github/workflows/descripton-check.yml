@@ -1,4 +1,4 @@
-iname: 'PR description checker'
+name: 'PR description checker'
 on:
   pull_request:
     types:
